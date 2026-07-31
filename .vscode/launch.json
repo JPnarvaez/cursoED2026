@@ -2,23 +2,15 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "C/C++ Runner: Debug Session",
+      "name": "Run Terminal Portuario",
       "type": "cppdbg",
       "request": "launch",
-      "args": [],
-      "stopAtEntry": false,
-      "externalConsole": true,
-      "cwd": "c:/Users/USUARIO/Desktop/Unidad2/Modularidad/evidencias",
-      "program": "c:/Users/USUARIO/Desktop/Unidad2/Modularidad/evidencias/build/Debug/outDebug",
+      "program": "${workspaceFolder}/terminal_portuario.exe",
+      "cwd": "${workspaceFolder}",
+      "externalConsole": false,
       "MIMode": "gdb",
-      "miDebuggerPath": "gdb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ]
+      "miDebuggerPath": "C:/ProgramData/mingw64/mingw64/bin/gdb.exe",
+      "preLaunchTask": "Compilar Terminal"
     }
   ]
 }

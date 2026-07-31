@@ -1,0 +1,54 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar Terminal",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-Wall",
+                "-Wextra",
+                "-Werror",
+                "-std=c11",
+                "-I",
+                "include",
+                "main.c",
+                "src/avl.c",
+                "src/destino.c",
+                "src/menu.c",
+                "src/pasajero.c",
+                "src/viaje.c",
+                "-o",
+                "terminal_portuario.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe compilar archivo activo",
+            "command": "C:/ProgramData/mingw64/mingw64/bin/gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-std=c11"
+            ],
+            "options": {
+                "cwd": "C:/ProgramData/mingw64/mingw64/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "detail": "Tarea generada por el depurador."
+        }
+    ]
+}
